@@ -13,6 +13,7 @@ records.forEach(function (element) {
     if (bloom.test(data)) {
         console.log('DUP', element);
     } else {
+        alert('static anlysis should pick this up')
         bloom.add(data);
     }
 });
