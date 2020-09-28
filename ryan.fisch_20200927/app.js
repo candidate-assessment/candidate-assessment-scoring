@@ -10,13 +10,10 @@ console.time('aaaa')
 records.forEach(element => {
     const data = element.EmailAddress + element.FirstNameLastName;
     if (bloom.test(data))
-    {
         console.log('DUP', element)
-
-    
-    } else {
+     else
        bloom.add(data)
-    }
+    
 });
 console.timeEnd('aaaa')
 
